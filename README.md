@@ -27,9 +27,28 @@
   ```
 ### Solving common problems in an application
 - Error when working with requests - No provider for HttpClient;
+  
   ```
   When writing tests for a service that uses the Angular HttpClient to make HTTP requests, it is recommended to import the HttpClientTestingModule instead of the HttpClientModule.
   The main reason for this is that the HttpClientTestingModule provides a complete test implementation of the HttpClient, which can be easily configured and used in unit tests. This test implementation is designed to simulate the network and can be configured to return simulated responses for specific HTTP requests.
   On the other hand, the HttpClientModule provides a real implementation of the HttpClient, which connects to the real network and makes real HTTP requests. This makes tests harder to write and more prone to failure due to network issues or lack of connectivity.
   Therefore, by importing the HttpClientTestingModule, we can easily simulate the HTTP requests and ensure that our unit tests are more reliable and predictable, without relying on the network or other external resources.
-```
+
+- Material Angular modal error - No provider for MatDialog;
+- Error when working with forms - No provider for FormBuilder;
+- Error working with ngModel - No provider for NgControl found in NodeInjector.
+
+Debugging the tests
+- Focusing on a single test 
+  ```
+  Use fdescribe instead of describe to focus on just one test;
+- Focusing on a single specification;
+  ```
+  Use fit instead of it to focus on just one it block;
+- Running tests from a single file 
+  ```
+  Use the command:
+  ng test --include **/component-name.component.spec.ts
+- Adding breakpoints;
+- Using debugger;
+- Jasmine's Debugger Context.
