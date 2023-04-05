@@ -33,4 +33,10 @@ describe('MatchersJasmineComponent', () => {
     expect(10).toBeTruthy();
     expect({}).toBeTruthy();
   })
+  it('should test the use of matcher toBeFalsy', () => {
+    expect(false).toBeFalsy();
+    expect("").toBeFalsy();
+    expect(null).toBeFalsy();
+    expect(NaN).toBeFalsy();
+  })
 });
