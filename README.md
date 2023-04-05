@@ -64,3 +64,4 @@ Debugging the tests
 - Testando se um valor não é true - not;
 - Checking if a value is contained in an array or string - toContain;
 - Checking if a value has been defined - toBeDefined;
+- Checking if a value has not been defined - toBeUndefined;
