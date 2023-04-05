@@ -68,3 +68,4 @@ Debugging the tests
 - Testing if a value is null - toBeNull;
 - Testing if a value is NaN - toBeNaN;
 - Checking if a value is greater than another - toBeGreatherThan;
+- Testing if one value is less than another - toBeLessThan;
