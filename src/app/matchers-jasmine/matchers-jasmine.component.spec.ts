@@ -79,4 +79,8 @@ describe('MatchersJasmineComponent', () => {
 
     expect(35.2).toBeCloseTo(35.2, 1);
   })
+  it('should test the use of matcher toMatch', () => {
+
+    expect('Alberto').toMatch(/A/);
+  })
 });
