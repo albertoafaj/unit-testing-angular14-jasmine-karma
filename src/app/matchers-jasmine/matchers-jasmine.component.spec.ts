@@ -54,4 +54,9 @@ describe('MatchersJasmineComponent', () => {
     expect('Alberto').not.toEqual('Erica');
     expect(names[0]).not.toBe('Erica');
   })
+  it('should test the use of matcher toContain', () => {
+    expect('Alberto').toContain('Alb');
+    expect([1, 2, 3]).toContain(1);
+    expect([1, 2, 3]).not.toContain(10);
+  })
 });
