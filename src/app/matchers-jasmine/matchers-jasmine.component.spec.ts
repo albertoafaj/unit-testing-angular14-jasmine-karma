@@ -39,4 +39,9 @@ describe('MatchersJasmineComponent', () => {
     expect(null).toBeFalsy();
     expect(NaN).toBeFalsy();
   })
+  it('should test the use of matcher toBeTrue', () => {
+    expect(true).toBeTrue();
+    expect(1 == 1).toBeTrue();
+    expect('abc' == 'abc').toBeTrue();
+  })
 });
