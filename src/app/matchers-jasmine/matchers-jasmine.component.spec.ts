@@ -64,6 +64,7 @@ describe('MatchersJasmineComponent', () => {
     expect(name).toBeDefined();
   })
 });
-it('should test the use of matcher toBeNull', () => {
-  expect(null).toBeNull();
+it('should test the use of matcher toBeNaN', () => {
+
+  expect(NaN).toBeNaN();
 })

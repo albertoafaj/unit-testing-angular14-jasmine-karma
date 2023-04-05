@@ -66,3 +66,4 @@ Debugging the tests
 - Checking if a value has been defined - toBeDefined;
 - Checking if a value has not been defined - toBeUndefined;
 - Testing if a value is null - toBeNull;
+- Testing if a value is NaN - toBeNaN;
