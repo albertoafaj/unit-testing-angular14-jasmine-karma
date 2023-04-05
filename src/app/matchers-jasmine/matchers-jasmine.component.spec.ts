@@ -59,4 +59,8 @@ describe('MatchersJasmineComponent', () => {
     expect([1, 2, 3]).toContain(1);
     expect([1, 2, 3]).not.toContain(10);
   })
+  it('should test the use of matcher toBeDefined', () => {
+    let name = 'Alberto';
+    expect(name).toBeDefined();
+  })
 });

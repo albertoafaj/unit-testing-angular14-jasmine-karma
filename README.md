@@ -63,3 +63,4 @@ Debugging the tests
 - Verificando se um valor é falso -  toBeFalse;
 - Testando se um valor não é true - not;
 - Checking if a value is contained in an array or string - toContain;
+- Checking if a value has been defined - toBeDefined;
