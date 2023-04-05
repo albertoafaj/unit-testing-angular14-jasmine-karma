@@ -24,4 +24,8 @@ describe('MatchersJasmineComponent', () => {
     expect(true).toEqual(true);
     expect([1, 2, 3]).toEqual([1, 2, 3]);
   })
+  it('should test the use of matcher toBe', () => {
+    let names = ['Alberto', 'Erica']
+    expect(names[0]).toBe('Alberto');
+  })
 });
