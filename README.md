@@ -52,3 +52,7 @@ Debugging the tests
 - Adding breakpoints;
 - Using debugger;
 - Jasmine's Debugger Context.
+
+
+### Testing expectations - Jasmine Matchers
+- Checking if the values are equal - toEqual;
