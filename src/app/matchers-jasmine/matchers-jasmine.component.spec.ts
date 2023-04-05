@@ -63,8 +63,7 @@ describe('MatchersJasmineComponent', () => {
     let name = 'Alberto';
     expect(name).toBeDefined();
   })
-  it('should test the use of matcher toBeUndefined', () => {
-    let name;
-    expect(name).toBeUndefined();
-  })
 });
+it('should test the use of matcher toBeNull', () => {
+  expect(null).toBeNull();
+})

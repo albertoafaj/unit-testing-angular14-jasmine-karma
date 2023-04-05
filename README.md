@@ -65,3 +65,4 @@ Debugging the tests
 - Checking if a value is contained in an array or string - toContain;
 - Checking if a value has been defined - toBeDefined;
 - Checking if a value has not been defined - toBeUndefined;
+- Testing if a value is null - toBeNull;
