@@ -63,8 +63,12 @@ describe('MatchersJasmineComponent', () => {
     let name = 'Alberto';
     expect(name).toBeDefined();
   })
-});
-it('should test the use of matcher toBeNaN', () => {
+  it('should test the use of matcher toBeNaN', () => {
 
-  expect(NaN).toBeNaN();
-})
+    expect(NaN).toBeNaN();
+  })
+  it('should test the use of matcher toBeGreaterThan', () => {
+
+    expect(10).toBeGreaterThan(1);
+  })
+});
