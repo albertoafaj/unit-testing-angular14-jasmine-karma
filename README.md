@@ -56,3 +56,9 @@ Debugging the tests
 
 ### Testing expectations - Jasmine Matchers
 - Checking if the values are equal - toEqual;
+- Verificando se os valores são iguais e do mesmo objeto - toBe;
+- Testando se um valor é truthy - toBeTruthy;
+- Testando se um valor é falsy - toBeFalsy;
+- Verificando se um valor é true - toBeTrue;
+- Verificando se um valor é falso -  toBeFalse;
+- Testando se um valor não é true - not;

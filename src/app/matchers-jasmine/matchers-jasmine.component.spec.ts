@@ -44,4 +44,14 @@ describe('MatchersJasmineComponent', () => {
     expect(1 == 1).toBeTrue();
     expect('abc' == 'abc').toBeTrue();
   })
+  it('should test the use of matcher toBeFalse', () => {
+    expect(false).toBeFalse();
+    expect(1 != 1).toBeFalse();
+    expect('abc' != 'abc').toBeFalse();
+  })
+  it('should test the use of matcher not', () => {
+    let names = ['Alberto', 'Erica']
+    expect('Alberto').not.toEqual('Erica');
+    expect(names[0]).not.toBe('Erica');
+  })
 });
