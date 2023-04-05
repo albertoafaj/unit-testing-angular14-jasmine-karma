@@ -1,27 +1,17 @@
-# UnitTestingAngular14JasmineKarma
+# Unit Testing with Angular 14 (Jasmine and Karma)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+### Main Topics
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Concept of a test suite in Angular
+- Test suite - describe;
+  The describe function in Angular tests is used to group related test cases into a suite for better organization and readability.
+- Specifications of these - it;
+  The it function in Angular tests is used to define an individual test case with a specific expectation.
+- Before each test - beforeEach;
+  The beforeEach function in Angular tests is used to set up a common state or configuration that should be applied to each individual test case in a describe block.
+- After each test - afterEach;
+  The afterEach function in Angular tests is used to perform cleanup or reset tasks after each individual test case in a describe block.
+- Before all - beforeAll;
+  The beforeAll function in Angular tests is used to set up a common state or configuration that should be applied once before all the test cases in a describe block are run.
+- Configuring the test modules - TestBeb.
+  The TestBed in Angular tests is a utility that provides a test environment to configure and create instances of components and services to be tested.
