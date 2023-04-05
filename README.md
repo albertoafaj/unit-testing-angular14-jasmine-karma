@@ -71,3 +71,4 @@ Debugging the tests
 - Testing if one value is less than another - toBeLessThan;
 - Checking if a number is next to another - toBeCloseTo;
 - Testing if a value is equal based on a regular expression - toMatch;
+- Checking if a function threw an error - toThrow.

@@ -83,4 +83,10 @@ describe('MatchersJasmineComponent', () => {
 
     expect('Alberto').toMatch(/A/);
   })
+  it('should test the use of matcher toThrow', () => {
+
+    expect(() => {
+      throw new Error('Meu erro');
+    }).toThrow();
+  })
 });
