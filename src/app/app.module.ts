@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatchersJasmineComponent } from './matchers-jasmine/matchers-jasmine.component';
+import { StubComponent } from './stub/stub.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MatchersJasmineComponent,
+    StubComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

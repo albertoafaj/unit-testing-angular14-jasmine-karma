@@ -85,3 +85,10 @@ In Angular, mocking service methods with Mocks allows developers to isolate the 
 
   Mock objects are also used in behavior-driven development (BDD) and test-driven development (TDD), where they can be used to define the behavior of objects before they are implemented. This can help to ensure that the objects are implemented correctly and that they behave as expected.
   ```
+- Mocking service methods with Stubs;
+  ```
+  In mock testing, a stub is a type of test double that replaces a real object with a simplified version that only provides the minimum necessary functionality required by the test. Stubs are used to isolate the code being tested from its dependencies and to control the behavior of those dependencies in a controlled way.
+
+  Unlike mocks, which are used to verify the behavior of the code being tested, stubs are used to provide predetermined responses to specific method calls made during the test. This allows developers to simulate specific scenarios and test edge cases without having to create complex setups or rely on external resources.
+
+  ```
