@@ -72,3 +72,16 @@ Debugging the tests
 - Checking if a number is next to another - toBeCloseTo;
 - Testing if a value is equal based on a regular expression - toMatch;
 - Checking if a function threw an error - toThrow.
+
+### Mocking component and service methods
+```
+In Angular, mocking service methods with Mocks allows developers to isolate the components being tested from their dependencies. This makes it easier to test the components in isolation and to identify and fix issues. Mocks can be created using testing frameworks such as Jasmine or Jest, and they can be used to simulate the behavior of the actual service methods.
+```
+- Mocking service methods with Mocks;
+  ```
+  In software testing, a mock object is a test double that is used to simulate the behavior of real objects in the system being tested. It is a simplified version of a real object that allows developers to test their code in isolation from the rest of the system.
+
+  Mock objects are particularly useful in unit testing, where they can be used to replace complex or external dependencies, such as databases or web services, with simple objects that behave in a predictable way. This allows developers to test their code without having to worry about the behavior of the external dependencies.
+
+  Mock objects are also used in behavior-driven development (BDD) and test-driven development (TDD), where they can be used to define the behavior of objects before they are implemented. This can help to ensure that the objects are implemented correctly and that they behave as expected.
+  ```
