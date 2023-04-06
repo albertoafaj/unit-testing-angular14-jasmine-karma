@@ -97,3 +97,5 @@ In Angular, mocking service methods with Mocks allows developers to isolate the 
   ```
   In Jasmine, a "spy" is a test double or a mock object that can track the invocation of functions and their arguments. In a Jasmine mock test, you can use a spy to create a test double for a function or object, and then assert that the function was called with the expected arguments or that it returned the expected value.
   ```
+
+  - Spying service methods with spyOn;
