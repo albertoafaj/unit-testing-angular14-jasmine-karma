@@ -7,6 +7,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatchersJasmineComponent } from './matchers-jasmine/matchers-jasmine.component';
 import { StubComponent } from './stub/stub.component';
 import { HomeComponent } from './home/home.component';
+import { SpyonComponent } from './spyon/spyon.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { HomeComponent } from './home/home.component';
     MatchersJasmineComponent,
     StubComponent,
     HomeComponent,
+    SpyonComponent,
   ],
   imports: [
     BrowserModule,

@@ -92,3 +92,8 @@ In Angular, mocking service methods with Mocks allows developers to isolate the 
   Unlike mocks, which are used to verify the behavior of the code being tested, stubs are used to provide predetermined responses to specific method calls made during the test. This allows developers to simulate specific scenarios and test edge cases without having to create complex setups or rely on external resources.
 
   ```
+ - Spying component methods with spyOn;
+   
+  ```
+  In Jasmine, a "spy" is a test double or a mock object that can track the invocation of functions and their arguments. In a Jasmine mock test, you can use a spy to create a test double for a function or object, and then assert that the function was called with the expected arguments or that it returned the expected value.
+  ```
