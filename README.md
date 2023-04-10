@@ -112,3 +112,7 @@ In Angular, mocking service methods with Mocks allows developers to isolate the 
   ```
   The jasmine.createSpy method in Jasmine is used to create a spy function that can track its invocations, arguments, and return values during unit testing.
   ```
+  - Create a spy object with jasmine.createSpyObj
+  ```
+  The jasmine.createSpyObj method in Jasmine is used to create a spy object with multiple spy functions that can track their invocations, arguments, and return values during unit testing.
+  ```

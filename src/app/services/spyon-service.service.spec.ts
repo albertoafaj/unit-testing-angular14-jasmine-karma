@@ -7,6 +7,7 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 fdescribe('SpyonServiceService', () => {
   let service: SpyonServiceService;
   const logger = jasmine.createSpy('log');
+  const status = jasmine.createSpyObj('service', ['name', 'age', 'email']);
 
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -36,6 +37,14 @@ fdescribe('SpyonServiceService', () => {
     logger('Loguei no sistema');
     expect(logger).toHaveBeenCalledTimes(1);
     expect(logger).toHaveBeenCalledWith('Loguei no sistema');
-
+  });
+  it('should create methods with jasmine.createSpyObj', () => {
+    status.name('Alberto');
+    status.email('alberto@email.com');
+    status.age(37);
+    expect(status.name).toHaveBeenCalledTimes(1);
+    expect(status.name).toHaveBeenCalledWith('Alberto');
+    expect(status.email).toHaveBeenCalledWith('alberto@email.com');
+    expect(status.age).toHaveBeenCalledWith(37);
   });
 });
