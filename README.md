@@ -99,3 +99,11 @@ In Angular, mocking service methods with Mocks allows developers to isolate the 
   ```
 
   - Spying service methods with spyOn;
+  ```
+  spyOn in Jasmine is used to create spies that monitor and verify the behavior of functions or methods during unit testing.
+  ```
+
+  - Spying service methods with spyOnProperty;
+  ```
+  SpyOnProperty in Jasmine is used to create a spy on a property of an object, which allows you to monitor and control the behavior of the property during unit testing.
+  ```
