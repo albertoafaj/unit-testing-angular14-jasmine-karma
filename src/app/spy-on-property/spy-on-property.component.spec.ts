@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SpyOnPropertyComponent } from './spy-on-property.component';
 
-fdescribe('SpyOnPropertyComponent', () => {
+describe('SpyOnPropertyComponent', () => {
   let component: SpyOnPropertyComponent;
   let fixture: ComponentFixture<SpyOnPropertyComponent>;
 

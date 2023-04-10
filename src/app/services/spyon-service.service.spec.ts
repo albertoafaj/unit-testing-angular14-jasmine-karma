@@ -4,8 +4,9 @@ import { SpyonServiceService } from './spyon-service.service';
 import { of } from 'rxjs';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-describe('SpyonServiceService', () => {
+fdescribe('SpyonServiceService', () => {
   let service: SpyonServiceService;
+  const logger = jasmine.createSpy('log');
 
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -29,5 +30,12 @@ describe('SpyonServiceService', () => {
     service.getUsers().subscribe(res => {
       expect(res).toEqual(response);
     })
+  });
+
+  it('should create a jasmine.createSpy method', () => {
+    logger('Loguei no sistema');
+    expect(logger).toHaveBeenCalledTimes(1);
+    expect(logger).toHaveBeenCalledWith('Loguei no sistema');
+
   });
 });

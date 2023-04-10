@@ -56,11 +56,11 @@ Debugging the tests
 
 ### Testing expectations - Jasmine Matchers
 - Checking if the values are equal - toEqual;
-- Verificando se os valores são iguais e do mesmo objeto - toBe;
-- Testando se um valor é truthy - toBeTruthy;
-- Testando se um valor é falsy - toBeFalsy;
-- Verificando se um valor é true - toBeTrue;
-- Verificando se um valor é falso -  toBeFalse;
+- Checking if the values are equal and from the same object - toBe;
+- Testing if a value is truthy - toBeTruthy;
+- Testing if a value is false - toBeFalsy;
+- Checking if a value is true - toBeTrue;
+- Checking if a value is false - toBeFalse;
 - Testando se um valor não é true - not;
 - Checking if a value is contained in an array or string - toContain;
 - Checking if a value has been defined - toBeDefined;
@@ -106,4 +106,9 @@ In Angular, mocking service methods with Mocks allows developers to isolate the 
   - Spying service methods with spyOnProperty;
   ```
   SpyOnProperty in Jasmine is used to create a spy on a property of an object, which allows you to monitor and control the behavior of the property during unit testing.
+  ```
+  - Create a spy function with jasmine.createSpy
+
+  ```
+  The jasmine.createSpy method in Jasmine is used to create a spy function that can track its invocations, arguments, and return values during unit testing.
   ```
