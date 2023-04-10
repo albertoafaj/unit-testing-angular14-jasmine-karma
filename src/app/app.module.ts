@@ -8,6 +8,7 @@ import { MatchersJasmineComponent } from './matchers-jasmine/matchers-jasmine.co
 import { StubComponent } from './stub/stub.component';
 import { HomeComponent } from './home/home.component';
 import { SpyonComponent } from './spyon/spyon.component';
+import { SpyOnPropertyComponent } from './spy-on-property/spy-on-property.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SpyonComponent } from './spyon/spyon.component';
     StubComponent,
     HomeComponent,
     SpyonComponent,
+    SpyOnPropertyComponent,
   ],
   imports: [
     BrowserModule,
