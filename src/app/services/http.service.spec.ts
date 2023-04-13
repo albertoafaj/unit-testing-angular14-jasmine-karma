@@ -102,4 +102,11 @@ fdescribe('HttpService', () => {
     request.flush(response);
 
   });
+  it('should contain headers in the request', () => {
+    service.getUserWithHeaders().subscribe();
+    const request = htppTestingController.expectOne(`${url}/users`);
+    expect(request.request.headers.has('content-type')).toEqual(true);
+    expect(request.request.headers.has('Authorization')).toEqual(true);
+
+  })
 });
