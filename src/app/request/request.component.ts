@@ -37,4 +37,9 @@ export class RequestComponent {
     this.http.putUser(id, user).subscribe()
   }
 
+
+  deleteUser(id: number) {
+    return this.http.deleteUser(id).subscribe();
+  }
+
 }

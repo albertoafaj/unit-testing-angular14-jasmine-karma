@@ -20,4 +20,7 @@ export class HttpService {
   putUser(id: number, user: any) {
     return this.http.put(`${this.url}/users/${id}`, user)
   }
+  deleteUser(id: number) {
+    return this.http.delete(`${this.url}/users/${id}`)
+  }
 }
