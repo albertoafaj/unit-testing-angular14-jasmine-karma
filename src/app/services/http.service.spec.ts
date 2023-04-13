@@ -55,4 +55,20 @@ fdescribe('HttpService', () => {
     expect(request.request.method).toBe('GET');
     expect(request.request.url).toBe(`${url}/users`);
   });
+  it('should make a POST request to register a user', () => {
+    const user = { "id": 0.18013741332928745, "name": "Neide", "email": "neide@gmail.com", "age": "40" };
+    const response = {
+      "id": 0.18013741332928745,
+      "name": "Neide",
+      "email": "neide@gmail.com",
+      "age": "40"
+    }
+    service.postUser(user).subscribe(res => {
+      expect(res).toBe(response)
+    })
+
+    const request = htppTestingController.expectOne(`${url}/users`)
+    expect(request.request.method).toBe('POST')
+    request.flush(response)
+  })
 });

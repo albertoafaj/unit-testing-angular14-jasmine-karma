@@ -7,11 +7,24 @@ import { HttpService } from '../services/http.service';
   styleUrls: ['./request.component.scss']
 })
 export class RequestComponent {
+  name!: string;
+  email!: string;
+  age!: string;
   constructor(private http: HttpService) { }
   getUsersd() {
     this.http.getUsers().subscribe();
   }
   getUsersById(id: number) {
     this.http.getUsersById(id).subscribe();
+  }
+  postUsers() {
+    const user = {
+      id: Math.random(),
+      name: this.name,
+      email: this.email,
+      age: this.age
+    }
+
+    this.http.postUser(user).subscribe()
   }
 }
