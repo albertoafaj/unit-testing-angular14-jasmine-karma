@@ -8,6 +8,9 @@ import { HttpService } from '../services/http.service';
 })
 export class RequestComponent {
   constructor(private http: HttpService) { }
+  getUsersd() {
+    this.http.getUsers().subscribe();
+  }
   getUsersById(id: number) {
     this.http.getUsersById(id).subscribe();
   }

@@ -27,4 +27,18 @@ fdescribe('HttpService', () => {
     expect(request.request.method).toBe('GET');
     expect(request.request.url).toBe(`${url}/users/${id}`);
   });
+  it('should execute GET call', () => {
+    const response = [{
+      "id": 3,
+      "name": "Alberto"
+    }]
+    service.getUsers().subscribe();
+    const request = htppTestingController.expectOne(`${url}/users`)
+    request.flush(response);
+    service.getUsers().subscribe(res => {
+      expect(res).toBe(response);
+    })
+    expect(request.request.method).toBe('GET');
+    expect(request.request.url).toBe(`${url}/users`);
+  });
 });
