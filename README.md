@@ -116,3 +116,12 @@ In Angular, mocking service methods with Mocks allows developers to isolate the 
   ```
   The jasmine.createSpyObj method in Jasmine is used to create a spy object with multiple spy functions that can track their invocations, arguments, and return values during unit testing.
   ```
+
+  ### Testing HTTP calls
+- Testing GET request by ID;
+- Testing GET request;
+- Testing error in the request;
+- Testing POST request;
+- Testing PUT request;
+- Testing DELETE request;
+- Testing if headers were passed in the request.
