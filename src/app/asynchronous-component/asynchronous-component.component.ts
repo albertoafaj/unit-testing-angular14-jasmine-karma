@@ -9,6 +9,7 @@ import { HttpService } from '../services/http.service';
 export class AsynchronousComponentComponent {
   data: any;
   dataPromise: any;
+  isLogged: any;
   constructor(private http: HttpService) { };
   getUsers() {
     this.http.getUsers().subscribe(res => {
@@ -21,6 +22,11 @@ export class AsynchronousComponentComponent {
       this.dataPromise = res;
     })
   };
+  isAuthenticaded() {
+    this.http.isAuthenticated().then(res => {
+      this.isLogged = res;
+    });
+  }
 
 
 }

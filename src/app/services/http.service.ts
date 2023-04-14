@@ -45,5 +45,9 @@ export class HttpService {
       }));
     });
     return promise;
-  }
+  };
+  isAuthenticated() {
+    return Promise.resolve(true);
+  };
+
 }

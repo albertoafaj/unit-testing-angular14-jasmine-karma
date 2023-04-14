@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AsynchronousComponentComponent } from './asynchronous-component.component';
 import { HttpService } from '../services/http.service';
 import { of } from 'rxjs';
+import { By } from '@angular/platform-browser';
 
 fdescribe('AsynchronousComponentComponent', () => {
   let component: AsynchronousComponentComponent;
@@ -93,6 +94,22 @@ fdescribe('AsynchronousComponentComponent', () => {
     await component.getUsersWithPromise()
 
     expect(component.dataPromise).toEqual(response)
+  });
+
+  it('should user login ', (done: DoneFn) => {
+    const loggedOut = fixture.debugElement.query(By.css('.logged-out')).nativeElement
+
+    let spy = spyOn(http, 'isAuthenticated').and.returnValue(Promise.resolve(true))
+
+    component.isAuthenticaded()
+
+    spy.calls.mostRecent().returnValue.then(() => {
+      fixture.detectChanges();
+      const logged = fixture.debugElement.query(By.css('.logged')).nativeElement
+      expect(logged.textContent).toBe('Logado')
+      done();
+    })
+    expect(loggedOut.textContent).toBe('Deslogado')
   })
 
 
