@@ -125,3 +125,10 @@ In Angular, mocking service methods with Mocks allows developers to isolate the 
 - Testing PUT request;
 - Testing DELETE request;
 - Testing if headers were passed in the request.
+
+### Testing Asynchronous Code
+- Testing subscribe;
+- Testing promises;
+- Using done function;
+- Async and WhenStable;
+- FakeAsync and Tick.

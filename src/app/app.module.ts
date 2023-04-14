@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { SpyonComponent } from './spyon/spyon.component';
 import { SpyOnPropertyComponent } from './spy-on-property/spy-on-property.component';
 import { RequestComponent } from './request/request.component';
+import { AsynchronousComponentComponent } from './asynchronous-component/asynchronous-component.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { RequestComponent } from './request/request.component';
     SpyonComponent,
     SpyOnPropertyComponent,
     RequestComponent,
+    AsynchronousComponentComponent,
   ],
   imports: [
     BrowserModule,
