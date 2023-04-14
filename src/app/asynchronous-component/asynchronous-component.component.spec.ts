@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core/testing';
 
 import { AsynchronousComponentComponent } from './asynchronous-component.component';
 import { HttpService } from '../services/http.service';
@@ -127,7 +127,11 @@ fdescribe('AsynchronousComponentComponent', () => {
       expect(logged.textContent).toBe('Logado')
 
     })
-  })
+  });
 
-
+  it('should define name', fakeAsync(() => {
+    component.defineValue();
+    tick(100);
+    expect(component.name).toBe('Jessica')
+  }));
 });

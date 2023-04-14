@@ -10,6 +10,7 @@ export class AsynchronousComponentComponent {
   data: any;
   dataPromise: any;
   isLogged: any;
+  name!: string;
   constructor(private http: HttpService) { };
   getUsers() {
     this.http.getUsers().subscribe(res => {
@@ -26,7 +27,13 @@ export class AsynchronousComponentComponent {
     this.http.isAuthenticated().then(res => {
       this.isLogged = res;
     });
-  }
+  };
+  defineValue() {
+    this.name = 'Danilo';
+    setTimeout(() => {
+      this.name = 'Jessica'
+    }, 100)
+  };
 
 
 }
