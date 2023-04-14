@@ -8,11 +8,19 @@ import { HttpService } from '../services/http.service';
 })
 export class AsynchronousComponentComponent {
   data: any;
+  dataPromise: any;
   constructor(private http: HttpService) { };
   getUsers() {
     this.http.getUsers().subscribe(res => {
       this.data = res;
     });
   };
+  getUsersWithPromise() {
+    this.http.getUsersWithPromise().then(res => {
+      console.log('res then -->>', res)
+      this.dataPromise = res;
+    })
+  };
+
 
 }
