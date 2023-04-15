@@ -12,6 +12,7 @@ import { SpyOnPropertyComponent } from './spy-on-property/spy-on-property.compon
 import { RequestComponent } from './request/request.component';
 import { AsynchronousComponentComponent } from './asynchronous-component/asynchronous-component.component';
 import { TestingComponentComponent } from './testing-component/testing-component.component';
+import { FixtureDetectChangeComponent } from './fixture-detect-change/fixture-detect-change.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { TestingComponentComponent } from './testing-component/testing-component
     RequestComponent,
     AsynchronousComponentComponent,
     TestingComponentComponent,
+    FixtureDetectChangeComponent,
   ],
   imports: [
     BrowserModule,

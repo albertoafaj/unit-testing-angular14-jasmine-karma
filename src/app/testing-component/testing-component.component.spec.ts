@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { TestingComponentComponent } from './testing-component.component';
 import { By } from '@angular/platform-browser';
 
-fdescribe('TestingComponentComponent', () => {
+describe('TestingComponentComponent', () => {
   let component: TestingComponentComponent;
   let fixture: ComponentFixture<TestingComponentComponent>;
 
