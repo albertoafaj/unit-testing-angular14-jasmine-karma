@@ -132,3 +132,11 @@ In Angular, mocking service methods with Mocks allows developers to isolate the 
 - Using done function;
 - Async and WhenStable;
 - FakeAsync and Tick.
+
+### Testing components
+- Accessing the DOM with debugElement.query() and nativeElement.querySelector();
+- Manual change detection - fixture.detectChanges();
+- Automatic detection of changes;
+- Triggering button click with triggerEventHandler;
+- Filling forms triggering Input event;
+- Testing Inputs and Outputs - @Input and @Output.

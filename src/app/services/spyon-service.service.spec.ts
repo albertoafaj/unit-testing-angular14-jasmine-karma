@@ -4,7 +4,7 @@ import { SpyonServiceService } from './spyon-service.service';
 import { of } from 'rxjs';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-fdescribe('SpyonServiceService', () => {
+describe('SpyonServiceService', () => {
   let service: SpyonServiceService;
   const logger = jasmine.createSpy('log');
   const status = jasmine.createSpyObj('service', ['name', 'age', 'email']);

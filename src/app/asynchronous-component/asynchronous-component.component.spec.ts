@@ -5,7 +5,7 @@ import { HttpService } from '../services/http.service';
 import { of } from 'rxjs';
 import { By } from '@angular/platform-browser';
 
-fdescribe('AsynchronousComponentComponent', () => {
+describe('AsynchronousComponentComponent', () => {
   let component: AsynchronousComponentComponent;
   let fixture: ComponentFixture<AsynchronousComponentComponent>;
   let http: HttpService;
