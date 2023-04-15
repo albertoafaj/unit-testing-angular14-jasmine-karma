@@ -25,4 +25,8 @@ fdescribe('TestingComponentComponent', () => {
     let title = fixture.debugElement.query(By.css('h1')).nativeElement;
     expect(title.textContent).toBe('Meu título');
   });
+  it('should access element in DOM with nativeElement.querySelector()', () => {
+    let p = fixture.debugElement.nativeElement.querySelector('p');
+    expect(p.textContent).toBe('Meu parágrafo');
+  });
 });
