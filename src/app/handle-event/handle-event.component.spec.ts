@@ -1,0 +1,32 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { HandleEventComponent } from './handle-event.component';
+import { By } from '@angular/platform-browser';
+
+fdescribe('HandleEventComponent', () => {
+  let component: HandleEventComponent;
+  let fixture: ComponentFixture<HandleEventComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [HandleEventComponent]
+    })
+      .compileComponents();
+    fixture = TestBed.createComponent(HandleEventComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+  it('should define emoji when click on button', () => {
+    const emoji = '😁';
+    const title = fixture.debugElement.query(By.css('h1')).nativeElement;
+    const button = fixture.debugElement.query(By.css('button'));
+    button.triggerEventHandler('click', null);
+    fixture.detectChanges();
+    expect(title.textContent).toBe('😁')
+
+  });
+});

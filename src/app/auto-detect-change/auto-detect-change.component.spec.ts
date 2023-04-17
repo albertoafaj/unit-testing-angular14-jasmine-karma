@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed, ComponentFixtureAutoDetect } from '@angular/
 import { AutoDetectChangeComponent } from './auto-detect-change.component';
 import { By } from '@angular/platform-browser';
 
-fdescribe('AutoDetectChangeComponent', () => {
+describe('AutoDetectChangeComponent', () => {
   let component: AutoDetectChangeComponent;
   let fixture: ComponentFixture<AutoDetectChangeComponent>;
 
