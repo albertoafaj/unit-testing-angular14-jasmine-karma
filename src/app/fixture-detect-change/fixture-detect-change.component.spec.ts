@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FixtureDetectChangeComponent } from './fixture-detect-change.component';
 import { By } from '@angular/platform-browser';
 
-fdescribe('FixtureDetectChangeComponent', () => {
+describe('FixtureDetectChangeComponent', () => {
   let component: FixtureDetectChangeComponent;
   let fixture: ComponentFixture<FixtureDetectChangeComponent>;
 

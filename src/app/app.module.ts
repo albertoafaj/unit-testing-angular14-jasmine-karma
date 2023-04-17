@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -13,6 +13,7 @@ import { RequestComponent } from './request/request.component';
 import { AsynchronousComponentComponent } from './asynchronous-component/asynchronous-component.component';
 import { TestingComponentComponent } from './testing-component/testing-component.component';
 import { FixtureDetectChangeComponent } from './fixture-detect-change/fixture-detect-change.component';
+import { AutoDetectChangeComponent } from './auto-detect-change/auto-detect-change.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +27,13 @@ import { FixtureDetectChangeComponent } from './fixture-detect-change/fixture-de
     AsynchronousComponentComponent,
     TestingComponentComponent,
     FixtureDetectChangeComponent,
+    AutoDetectChangeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
