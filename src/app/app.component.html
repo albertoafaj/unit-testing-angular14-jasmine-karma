@@ -1,2 +1,5 @@
 <router-outlet> </router-outlet>
-<app-handle-event></app-handle-event>
+<app-input-output 
+[user]="user"
+(userMessage)="getUserMessage($event)"
+></app-input-output>
