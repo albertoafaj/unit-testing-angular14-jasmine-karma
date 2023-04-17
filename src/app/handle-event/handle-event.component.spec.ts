@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { HandleEventComponent } from './handle-event.component';
 import { By } from '@angular/platform-browser';
 
-fdescribe('HandleEventComponent', () => {
+describe('HandleEventComponent', () => {
   let component: HandleEventComponent;
   let fixture: ComponentFixture<HandleEventComponent>;
 

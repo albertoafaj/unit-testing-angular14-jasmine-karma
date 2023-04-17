@@ -15,6 +15,7 @@ import { TestingComponentComponent } from './testing-component/testing-component
 import { FixtureDetectChangeComponent } from './fixture-detect-change/fixture-detect-change.component';
 import { AutoDetectChangeComponent } from './auto-detect-change/auto-detect-change.component';
 import { HandleEventComponent } from './handle-event/handle-event.component';
+import { FillFormComponent } from './fill-form/fill-form.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { HandleEventComponent } from './handle-event/handle-event.component';
     FixtureDetectChangeComponent,
     AutoDetectChangeComponent,
     HandleEventComponent,
+    FillFormComponent,
   ],
   imports: [
     BrowserModule,
