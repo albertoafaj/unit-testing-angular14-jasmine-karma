@@ -20,6 +20,7 @@ import { InputOutputComponent } from './input-output/input-output.component';
 import { HttpPipe } from './http.pipe';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ExtratoComponent } from './extrato/extrato.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HttpPipe,
     LoginComponent,
     DashboardComponent,
+    ExtratoComponent,
   ],
   imports: [
     BrowserModule,

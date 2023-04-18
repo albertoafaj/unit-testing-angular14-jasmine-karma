@@ -4,7 +4,7 @@ import { GuardGuard } from './guard.guard';
 import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 
-fdescribe('GuardGuard', () => {
+describe('GuardGuard', () => {
   let guard: GuardGuard;
   let routeMock: any = { snapshot: {} };
   let routeStateMock: any = { snapshot: {}, url: '/login' };
