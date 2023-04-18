@@ -18,6 +18,8 @@ import { HandleEventComponent } from './handle-event/handle-event.component';
 import { FillFormComponent } from './fill-form/fill-form.component';
 import { InputOutputComponent } from './input-output/input-output.component';
 import { HttpPipe } from './http.pipe';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { HttpPipe } from './http.pipe';
     FillFormComponent,
     InputOutputComponent,
     HttpPipe,
+    LoginComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

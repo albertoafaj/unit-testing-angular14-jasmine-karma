@@ -140,3 +140,9 @@ In Angular, mocking service methods with Mocks allows developers to isolate the 
 - Triggering button click with triggerEventHandler;
 - Filling forms triggering Input event;
 - Testing Inputs and Outputs - @Input and @Output.
+
+### Testing Pipes, Route Guards, Routes and Directives
+- Testing pipes;
+- Testing route guard;
+- Testing routes;
+- Testing directives.
